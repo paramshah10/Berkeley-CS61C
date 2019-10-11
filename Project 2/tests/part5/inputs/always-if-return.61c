@@ -1,0 +1,34 @@
+int f () {
+  if (true) {
+    return 1;
+  }
+}
+
+int g () {
+  if (1) {
+    return 1;
+  }
+}
+
+int h () {
+  if ('c') {
+    return 1;
+  }
+}
+
+int i () {
+  if ("hello world") {
+    return 1;
+  }
+}
+
+int m () {
+  if (NULL) {
+    return 1;
+  }
+  return 2;
+}
+
+int main () {
+  return f () + g () + h () + i () + m ();
+}

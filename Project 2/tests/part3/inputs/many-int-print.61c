@@ -1,0 +1,9 @@
+#include "../../../cgen-lib/print.h"
+
+int main () {
+  int x = 9;
+  int y = 7;
+  int z = 16;
+  PrintInts (x, y, z);
+  return x;
+}

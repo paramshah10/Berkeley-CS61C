@@ -1,0 +1,10 @@
+int main () {
+  int x = -4;
+  while (True) {
+    if (x > 15) {
+      break;
+    }
+    x = x * -2;
+  }
+  return x;
+}

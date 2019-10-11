@@ -1,0 +1,9 @@
+#include "../../../cgen-lib/print.h"
+
+int main () {
+  char x = 42;
+  char y = 68;
+  char z = 78;
+  PrintChars (x, y, z);
+  return x;
+}

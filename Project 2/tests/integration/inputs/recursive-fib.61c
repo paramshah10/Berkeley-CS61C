@@ -1,0 +1,17 @@
+#include "../../../cgen-lib/print.h"
+
+int main () {
+  PrintInt (fib (5));
+  PrintInt (fib (10));
+  return 0;
+}
+
+int fib (int n) {
+  if (n == 0) {
+    return 0;
+  }
+  if (n == 1) {
+    return 1;
+  }
+  return fib (n - 2) + fib (n - 1);
+}

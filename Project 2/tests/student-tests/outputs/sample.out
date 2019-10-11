@@ -1,0 +1,53 @@
+Testing function ptr
+Expected: 
+
+Value of ip = 2293316 Value of dp = 2293304 Value of cp = 2293303 Value of ip + 1 = 2293320 Value of dp + 1 = 2293312 Value of cp + 1 = 2293304 Value of ip + 2 = 2293324  Value of dp + 2 = 2293320 Value of cp + 2 = 2293305
+Got:
+
+Value of ip = 
+2147483524
+
+Value of cp = 
+2147483519
+
+Value of ip + 1 = 
+2147483528
+
+Value of cp + 1 = 
+2147483520
+
+Value of ip + 2 = 
+2147483532
+
+Value of cp + 2 = 
+2147483521
+
+Value of ip - 1 = 
+2147483520
+Value of ip - 2 = 
+2147483516
+Value of cp - 1 = 
+2147483518
+Value of cp - 2 = 
+2147483517
+
+Testing TwoPointers
+Expected: 
+Value of ip1 or address of i1 = 2686788  Value of ip2 or address of i2 = 2686780   ip2 - ip1 = 2  ip1 - ip2 = -2
+
+Got: 
+Value of ip1 or address of i1 = 
+2147483524
+
+Value of ip2 or address of i2 = 
+2147483516
+
+
+ip2 - ip1 = 
+2
+
+ip1 - ip2 = %d
+-2
+
+
+Exited with error code 0

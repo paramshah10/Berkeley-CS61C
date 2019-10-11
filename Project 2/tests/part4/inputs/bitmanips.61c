@@ -1,0 +1,59 @@
+#include "../../../cgen-lib/print.h"
+
+int get_bit (int num, int loc) {
+  int constant = 1;
+  int i;
+  for (i = 0; i < loc; i++) {
+    constant = constant * 2;
+  }
+  num = num & constant;
+  num = num / constant;
+  return num;
+}
+
+int set_bit (int *num, int loc, int val) {
+  int constant = 1;
+  int i;
+  for (i = 0; i < loc; i++) {
+    val = val * 2;
+    constant = constant * 2;
+  }
+  *num = *num & ~constant;
+  *num = *num | val;
+  return 0;
+}
+
+int flip_bit (int *num, int loc) {
+  int constant = 1;
+  int i;
+  for (i = 0; i < loc; i++) {
+    constant = constant * 2;
+  }
+  *num = *num ^ ~constant;
+  return 0;
+}
+
+int is_pow_2 (int num) {
+  return (int) (num > 0 && (num & num - 1) == 0);
+}
+
+int main () {
+  int x = 1245;
+  PrintInt (get_bit (x, 0));
+  PrintInt (get_bit (x, 1));
+  PrintInt (get_bit (x, 2));
+  PrintInt (get_bit (x, 10));
+  set_bit (&x, 0, 1);
+  set_bit (&x, 1, 1);
+  set_bit (&x, 5, 0);
+  set_bit (&x, 10, 0);
+  PrintInt (x);
+  flip_bit (&x, 3);
+  flip_bit (&x, 9);
+  PrintInt (x);
+  PrintInt (is_pow_2 (0));
+  PrintInt (is_pow_2 (-1));
+  PrintInt (is_pow_2 (4));
+  PrintInt (is_pow_2 (6));
+  return 0;
+}

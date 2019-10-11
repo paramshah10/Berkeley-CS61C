@@ -1,0 +1,3 @@
+int main () {
+  return (int) ((int) (1 < 7) < (int) (8 < 9));  
+} 

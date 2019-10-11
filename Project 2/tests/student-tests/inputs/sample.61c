@@ -1,0 +1,87 @@
+#include "../../../cgen-lib/print.h"
+
+int main () {
+   PrintString("Testing function ptr");
+   PrintString("Expected: ");
+   PrintNewline();
+   PrintString("Value of ip = 2293316 Value of dp = 2293304 Value of cp = 2293303 Value of ip + 1 = 2293320 Value of dp + 1 = 2293312 Value of cp + 1 = 2293304 Value of ip + 2 = 2293324  Value of dp + 2 = 2293320 Value of cp + 2 = 2293305");
+   PrintString("Got:");
+   PrintNewline();
+   ptr();
+   PrintNewline();
+   PrintString("Testing TwoPointers");
+   PrintString("Expected: ");
+   PrintString("Value of ip1 or address of i1 = 2686788  Value of ip2 or address of i2 = 2686780   ip2 - ip1 = 2  ip1 - ip2 = -2"); 
+   PrintNewline();
+   PrintString("Got: ");
+   TwoPointers();
+   return 0;
+}
+
+int ptr()
+{
+    int i = 12; 
+    int* ip = &i;
+    char ch = 'a'; 
+    char* cp = &ch;
+ 
+    PrintString("Value of ip = ");
+    PrintInt(ip);
+    PrintNewline();
+    PrintString("Value of cp = ");
+    PrintInt(cp);
+    PrintNewline();
+ 
+    PrintString("Value of ip + 1 = ");
+    PrintInt(ip + 1);
+    PrintNewline();
+    PrintString("Value of cp + 1 = ");
+    PrintInt(cp + 1);
+    PrintNewline();
+ 
+    PrintString("Value of ip + 2 = ");
+    PrintInt(ip+2);
+    PrintNewline();
+    PrintString("Value of cp + 2 = ");
+    PrintInt(cp + 2);
+    PrintNewline();
+    
+
+    PrintString("Value of ip - 1 = ");
+    PrintInt(ip - 1);
+    PrintString("Value of ip - 2 = ");
+    PrintInt(ip - 2);
+    PrintString("Value of cp - 1 = ");
+    PrintInt(cp - 1);
+    PrintString("Value of cp - 2 = ");
+    PrintInt(cp - 2);
+    // signal to operating system program ran fine
+    return 0;
+}
+
+
+int TwoPointers()
+{
+    int i1 = 12;
+    int* ip1 = &i1;
+    int i2 = 12;
+    int* ip2 = &i2;
+ 
+    PrintString("Value of ip1 or address of i1 = ");
+    PrintInt(ip1);
+    PrintNewline();
+    PrintString("Value of ip2 or address of i2 = ");
+    PrintInt(ip2);
+    PrintNewline();
+    PrintNewline();
+ 
+    PrintString("ip2 - ip1 = ");
+    PrintInt(ip1 - ip2);
+    PrintNewline();
+    PrintString("ip1 - ip2 = %d");
+    PrintInt(ip2 - ip1);
+    PrintNewline();
+ 
+    // signal to operating system program ran fine
+    return 0;
+}

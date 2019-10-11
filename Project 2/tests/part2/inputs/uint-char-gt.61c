@@ -1,0 +1,5 @@
+int main () {
+  unsigned int x = -1;
+  char y = 0;
+  return (int) (x > y);  
+} 

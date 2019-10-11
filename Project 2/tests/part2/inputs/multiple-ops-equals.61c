@@ -1,0 +1,4 @@
+int main () {
+  return (int) (-(int) (-4 == 6) == -(int) (-2 == -2));
+}
+

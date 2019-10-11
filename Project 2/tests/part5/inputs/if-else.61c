@@ -1,0 +1,21 @@
+#include "../../../cgen-lib/print.h"
+
+int main () {
+  if (true) {
+    PrintString ("Success 1");
+  }
+  if (true) {
+    PrintString ("Success 2");
+  } else {
+    PrintString ("Failure 2");
+  }
+  if (false) {
+    PrintString ("Failure 3");
+  }
+  if (false) {
+    PrintString ("Failure 4");
+  } else {
+    PrintString ("Success 4");
+  }
+  return 0;
+}

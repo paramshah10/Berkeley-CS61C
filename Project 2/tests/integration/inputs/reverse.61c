@@ -1,0 +1,27 @@
+#include "../../../cgen-lib/print.h"
+
+int reverse_in_place(char* arr, int length){
+  int temp;
+  int i; 
+  for (i = 0; i < length/2; i++){
+    temp = arr[i];
+    arr[i] = arr[length -1 - i]; 
+    arr[length -1 - i] = temp;  
+
+  }
+  return 0;
+}
+
+int main () {
+  int arrSize = 10;
+  char a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int i;
+  for (i = 0; i < arrSize; i++) {
+    PrintInt (a[i]);
+  }
+  reverse_in_place (a, arrSize);
+  for (i = 0; i < arrSize; i++) {
+    PrintInt (a[i]);
+  }
+  return 0;  
+}

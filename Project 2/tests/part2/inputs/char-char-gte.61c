@@ -1,0 +1,5 @@
+int main () {
+  char x = -1;
+  char y = 0;
+  return (int) (x >= y);  
+} 
