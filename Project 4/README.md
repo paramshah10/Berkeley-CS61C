@@ -1,5 +1,4 @@
 # Project 4 - Performance Programming
-Starter code for Summer 2019 Project 4
 
 In this project, I applied some of the performance optimization techniques that I have learned in class to the real-world problem of classifying images using a Convolutional Neural Network (CNN).
 
