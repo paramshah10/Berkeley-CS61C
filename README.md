@@ -1,7 +1,8 @@
 # Berkeley - CS 61C
-Repository for Computer Architecture Class at UC Berkeley
+Repository for Computer Architecture Class at UC Berkeley.
 
 Course Website: https://cs61c.org/ 
+
 Course Description: https://www2.eecs.berkeley.edu/Courses/CS61C/
 
 The goal was to learn the great ideas of computer design and implementation (using C and RISC-V Assembly Language):
