@@ -16,3 +16,10 @@ The goal was to learn the great ideas of computer design and implementation (usi
   7. Layering of Hardware Levels of Abstraction (e.g., AND gates, Arithmetic Logic Unit or ALU, Central Processing Units or CPU)
   8. Compilation vs. Interpretation (e.g., C compiler, Java interpreter)
   9. Hardware Instruction Set Interpretation (e.g., instructions as binary numbers)
+
+Project | Score | Notes
+---- | ---- | ----
+1 | 80.75 | Program encountered a segfault during execution
+2 | 99 | Failed testPtrGte, testPtrLt, and PtrPtrSub
+3 | 97 | Failed Mem Full Test
+4 | 100 | 
